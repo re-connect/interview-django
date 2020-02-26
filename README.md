@@ -25,12 +25,14 @@
 
 - `cd backend`
 - Démarrer le serveur `python manage.py runserver`
+- Le serveur a démarré à [http://localhost:8000](http://localhost:8000)
 
 ## Ce qui est déjà en place
 
 - Backend
   - Authentification possible en jwt
   - Base de données avec des utilisateurs de des données
+  - Il y a un utilisateur de test: username: tester passwd: I@mTheT€ster
 
 ## Missions
 
