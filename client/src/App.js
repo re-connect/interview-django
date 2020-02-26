@@ -1,23 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import names from "./names";
+
+const apiEndpoint = "https://avatars.dicebear.com/v2/avataaars/";
+const apiOptions = "options[mood][]=happy";
+
+const getAvatar = name => `${apiEndpoint}${name}.svg?${apiOptions}`;
 
 function App() {
+  const beneficiaryNames = [...Array(12).keys()].map(
+    number => names[Math.floor(Math.random() * names.length)]
+  );
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Bienvenue dans le gestionnaire de bénéficaires Reconnect</h1>
+        <div className="Beneficiaries-list">
+          {beneficiaryNames.map(name => (
+            <div class="Beneficiary-card">
+              <span>{name}</span>
+              <img src={getAvatar(name)} alt={name} />
+            </div>
+          ))}
+        </div>
       </header>
     </div>
   );
