@@ -38,6 +38,8 @@
 - 2. Faire fonctionner le projet en local
 - 3. Rajouter une page d'authentification sur le frontend qui permet de se connecter et de récupérer un token jwt pour faire des requêtes au backend
 - 4. Dans une page d'accueil authentifiée, afficher les informations de l'utilisateur dans le frontend dans le header
+- 5. Ajouter une barre de recherche par nom
+- 6. Ajouter un bouton qui permet d'enregistrer une personne dans la base de données
 
 ## Points d'attention
 
