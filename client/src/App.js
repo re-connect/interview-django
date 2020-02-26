@@ -16,7 +16,10 @@ function App() {
     []
   );
   const fetchBeneficiaries = async () => {
-    const response = await request.get(beneficiariesEndpoint);
+    const response = await request
+      .get(beneficiariesEndpoint)
+      .set("Access-Control-Allow-Origin", "*")
+      .set("Accept", "application/json");
     console.log(response);
     setRegisteredBeneficiaries(response);
   };
@@ -34,6 +37,13 @@ function App() {
       <header className="App-header">
         <h1>Bienvenue dans le gestionnaire de bénéficaires Reconnect</h1>
         <div className="Beneficiaries-list">
+          {registeredBeneficiaries.map((name, index) => (
+            <div className="Beneficiary-card" key={name + index}>
+              <span>{name}</span>
+              <img src={getAvatar(name)} alt={name} />
+            </div>
+          ))}
+          <hr />
           {beneficiaryNames.map((name, index) => (
             <div className="Beneficiary-card" key={name + index}>
               <span>{name}</span>
