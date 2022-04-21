@@ -2,9 +2,6 @@
 
 ## Contexte et stack technique
 
-- Application frontend React
-  - Besoin de Node.js
-  - Besoin d'un package-manager `npm` ou `yarn`
 - Application backend Python Django
   - [Api] Django rest framework
   - [Authentification] Django rest framework simple jwt
@@ -12,27 +9,17 @@
 
 ## Mise en place du projet
 
-- Cloner le repository `git clone git@github.com:re-connect/interview.git`
-- `cd interview`
-
-### Frontend
-
-- `cd client`
-- `yarn`
-- `yarn start`
-
-### Frontend
-
+- Cloner le repository `git clone git@github.com:re-connect/interview-django.git`
+- `cd interview-django`
 - `cd backend`
 - Démarrer le serveur `python manage.py runserver`
 - Le serveur a démarré à [http://localhost:8000](http://localhost:8000)
 
 ## Ce qui est déjà en place
 
-- Backend
-  - Authentification possible en jwt
-  - Base de données avec des utilisateurs de des données
-  - Il y a un utilisateur de test: username: tester passwd: I@mTheT€ster
+- Authentification possible en jwt
+- Base de données avec des utilisateurs de des données
+- Il y a un utilisateur de test: username: tester passwd: I@mTheT€ster
 
 ## Missions
 

@@ -1,5 +1,7 @@
-from django.conf.urls import include, url
-from django.urls import path
+from importlib.resources import read_binary
+
+from django.conf.urls import include
+from django.urls import re_path
 from rest_framework import routers, serializers, viewsets
 
 from . import views
@@ -25,5 +27,5 @@ router = routers.DefaultRouter()
 router.register(r'beneficiaries', BeneficiaryViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    re_path(r'^', include(router.urls)),
 ]
