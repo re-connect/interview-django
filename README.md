@@ -25,11 +25,13 @@
 
 - 1. Forker le projet sur votre github
 - 2. Faire fonctionner le projet en local
-- 3. Rajouter une page d'authentification sur le frontend qui permet de se connecter et de récupérer un token jwt pour faire des requêtes au backend
-- 4. Dans une page d'accueil authentifiée, afficher les informations de l'utilisateur dans le frontend dans le header
-- 5. Ajouter une barre de recherche par nom (idéalement, une recherche dans le backend via un call AJAX, sinon, en pur frontend)
+- 3. Tester le fonctionnement des routes, vérifier qu'elles sont accessibles de manière non connectée
+- 4. Mettre en place une protection sur les routes du backend par JWT
+- 5. Rajouter une page d'authentification sur le frontend qui permet de se connecter et de récupérer un token jwt pour faire des requêtes au backend
+- 6. Dans une page d'accueil authentifiée, afficher les informations de l'utilisateur dans le frontend dans le header
+- 7. Ajouter une barre de recherche par nom (idéalement, une recherche dans le backend via un call AJAX, sinon, en pur frontend)
   - 5.bonus Ajouter une barre de recherche front et une barre de recherche back
-- 6. Ajouter un bouton qui permet d'enregistrer une personne dans la base de données
+- 8. Ajouter un bouton qui permet d'enregistrer une personne dans la base de données
   - 6.bonus À la création d'une personne en bdd, persister en base l'email du créateur et la date de création
   - 6.bonus-bis Ajouter un bouton sur chaque personne qui permet de le supprimer de la base de données
 ## Points d'attention
